@@ -62,6 +62,73 @@ Chat AI tools are only as good as the prompts you give them. The quality and app
 
 If you make use of AI tools, it is important to understand how the data (including private or commercial code) might be used by the system. You can read more about how GitHub copilot handles your data and code at the [GitHub Copilot Privacy FAQ](https://github.com/features/copilot/#faq) and how to [manage Copilot policies](https://docs.github.com/en/copilot/how-tos/manage-your-account/manage-policies). Many organizations have policies that restrict the use of AI tools when working with proprietary code or data, so it is important to check for applicable policies before using these tools.
 
+For cross-cutting expectations that apply beyond Copilot-specific tooling, see the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide.
+
+## Team Operating Model for AI-Assisted Delivery
+
+AI assistants and coding agents work best when teams use them inside the same engineering controls as human-authored changes. Agree on the expected workflow before using an agent on production code, customer data, infrastructure, or security-sensitive changes.
+
+Use the lightest tool that fits the task:
+
+- Use IDE suggestions for small edits, refactoring help, unit-test scaffolding, explanations, and documentation drafts where the developer stays in the loop.
+- Use chat-based editing when the task spans a few files, needs repository context, or benefits from an explicit prompt and review loop.
+- Use a coding agent when the work can be described as a bounded issue with acceptance criteria, validation commands, and clear out-of-scope areas.
+- Prefer direct human implementation for ambiguous product decisions, high-risk security changes, incident response, code involving sensitive data, or work that requires judgment the team has not captured in instructions.
+
+Give the assistant enough context to make a reviewable change:
+
+- Problem statement and user impact
+- Acceptance criteria and expected behavior
+- Relevant files, existing patterns, and design constraints
+- Validation commands, test data, and environment assumptions
+- Security, privacy, licensing, dependency, and accessibility constraints
+- Out-of-scope work and areas the assistant should not modify
+- Links to work items, design notes, and team conventions when they exist
+
+Define prompt and context hygiene as a team habit:
+
+- Keep prompts specific, bounded, and tied to the work item.
+- Include the minimum code and data needed for the task.
+- Do not paste secrets, credentials, customer data, personal data, private keys, production logs with sensitive content, or data that policy prohibits from leaving the approved environment.
+- Treat custom instructions, prompt files, and reusable prompts as project artifacts that need review when they influence production code, tests, deployment, or security posture.
+- Record important assumptions or prompts in the work item or pull request when they affect how reviewers should inspect the change.
+
+Set tool and execution boundaries before enabling agents or MCP servers:
+
+- Use only approved tools, extensions, models, and trusted MCP servers for the repository.
+- Confirm what each MCP server can read, write, execute, and send outside the local environment.
+- Run destructive commands, production operations, migrations, and write-path cloud operations only with explicit human approval.
+- Limit agent access to the repositories, branches, work items, credentials, and environments needed for the task.
+- Review generated dependency, package, license, and infrastructure changes with the same scrutiny as manually authored changes.
+
+Before a pull request is merged, a human owner remains accountable for the result:
+
+- Read the changed code and generated text as untrusted contribution, even when the output looks plausible.
+- Verify that tests, documentation, and migration notes match the change.
+- Run or review the validation evidence needed by the team, including linting, unit tests, integration tests, security checks, and manual verification when applicable.
+- For generative AI or agentic features, include evaluation evidence for prompts, model configuration, retrieval, safety behavior, and tool-call behavior. Use the [generative AI and agentic systems](../ml-and-ai-projects/generative-ai-and-agentic-systems.md) and [test planning](../automated-testing/test-planning.md#ai-evaluation-planning) guidance.
+- Disclose material AI or agent assistance in the pull request when it affects review context, authorship, risk, or validation expectations.
+
+Use the rest of the playbook as the control plane for AI-assisted delivery:
+
+- Use [code reviews](../code-reviews/process-guidance/reviewer-guidance.md#ai-assisted-and-agent-authored-changes) to inspect generated code, tests, prompts, tool configuration, and dependencies.
+- Use [source control](../source-control/README.md) and [commit guidance](../source-control/git-guidance/README.md#commit-best-practices) to keep AI-assisted changes small, traceable, and attributable.
+- Use [CI/CD](../CI-CD/README.md#ai-assisted-cicd-authoring) to validate generated pipeline, deployment, and infrastructure changes before they can affect shared environments.
+- Use [documentation](../documentation/README.md) to keep generated docs accurate and connected to the code they describe.
+- Use [threat modeling](../security/threat-modelling.md#ai-systems-threat-modeling-considerations) when assistants, agents, prompts, retrieval, model providers, or tools influence a production system.
+
+## Validating AI-Assisted Work
+
+Treat AI-generated output as a draft until a responsible person reviews and accepts it. Before merging or publishing AI-assisted work, check that:
+
+- Reviewers can explain the generated code, configuration, documentation, or tests.
+- Relevant unit, integration, end-to-end, or AI evaluation checks have been added or run.
+- Security-sensitive code, including authentication, authorization, cryptography, secrets, permissions, data access, CI/CD, and infrastructure changes, has received extra scrutiny.
+- Generated documentation is source-grounded, current, and verified against the implementation, commands, examples, and product behavior it describes.
+- Generated UI, content, images, alt text, captions, and flows meet the project's accessibility expectations.
+
+Use the [Testing](../automated-testing/README.md), [Code Reviews](../code-reviews/README.md), [Security](../security/README.md), [Documentation](../documentation/README.md), and [Accessibility](../non-functional-requirements/accessibility.md) guides for the domain-specific review path.
+
 ## Attributing AI-Assisted Code Authorship
 
 When using AI tools to generate code, it can be beneficial to maintain transparency about authorship for accountability, code review, and auditing purposes. This can be done easily by using [Git trailers](https://git-scm.com/docs/git-interpret-trailers) that append structured metadata to the end of commit messages.

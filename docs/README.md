@@ -19,6 +19,8 @@ If you do nothing else follow the [Engineering Fundamentals Checklist](./enginee
 
 The [first week of an ISE project](./the-first-week-of-an-ise-project.md) is a breakdown of the sections of the playbook according to the structure of an Agile sprint.
 
+Use [AI-Assisted Engineering](./ai-assisted-engineering/README.md) as the shared baseline for using AI tools in engineering work while preserving human ownership, validation, security, privacy, accessibility, and project governance.
+
 ## General Guidance
 
 * Keep the code quality bar high.

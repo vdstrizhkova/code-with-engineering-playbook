@@ -10,6 +10,18 @@ Code review is a way to have a conversation about the code where participants wi
 - **Learn and grow** by having others review the code, we get exposed to unfamiliar design patterns or languages among other topics, and even break some bad habits.
 - **Shared understanding** between the developers over the project's code.
 
+## Reviewing AI-assisted changes
+
+AI-generated code is reviewed as untrusted code. Reviewers should confirm that the change satisfies the work item, avoids unrelated generated code, and meets the same expectations as any other pull request.
+
+- Inspect logic, edge cases, error handling, security, performance, accessibility, and maintainability.
+- Require meaningful tests or evaluations for generated behavior.
+- Check generated comments, documentation, and PR text for unsupported claims.
+- Confirm prompts, transcripts, and generated artifacts do not expose secrets or customer data.
+- Record material AI assistance according to team convention.
+
+Use the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared review, data, and traceability considerations.
+
 ## Resources
 
 - [Code review tools](./tools.md)

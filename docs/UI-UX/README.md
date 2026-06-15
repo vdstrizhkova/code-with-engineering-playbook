@@ -10,6 +10,17 @@ The goal of the **User Interface** section is to provide guidance on developing 
 
 Keep in mind that like all software, there is no "right way" to build a user interface application. Leverage and trust your team's or your customer's experience and expertise for the best development experience.
 
+## AI-assisted UI and UX work
+
+AI-generated prototypes, personas, copy, and flows are exploration artifacts, not validated user research. Review them with designers, engineers, product owners, and affected users before treating them as product direction.
+
+1. Review generated personas, content, alt text, captions, and flows for accessibility, inclusion, bias, plain language, and cognitive load.
+1. For AI features in the user experience, design disclosure, user control, fallback, appeal, and human escalation.
+1. Include UX evaluation for trust calibration, error recovery, overreliance, and user understanding of AI limitations.
+1. Confirm which AI tools are approved for this project and data type before uploading designs, screenshots, transcripts, or customer context.
+
+Use the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared accessibility, privacy, and governance practices.
+
 ## General Guidance
 
 The state of web platform engineering is fast moving. There is no one-size-fits-all solution. For any team to be successful in building a UI, they need to have an understanding of the higher-level aspects of all UI project.

@@ -28,6 +28,10 @@ A robust build automation pipeline will:
 ### Code / Manifest Artifacts Required to Build Your Project Should be Maintained Within Your Projects Git Repository
 
 - CI provider-specific build pipeline definition(s) should reside within your project(s) git repository(s).
+- For generative AI and agentic applications, prompts, evaluation datasets, model configuration, grounding index definitions, safety policies, orchestration settings, and tool permission manifests should be maintained as versioned artifacts when they affect product behavior.
+- AI application artifacts should have the same review, test, rollback, and promotion expectations as application code and infrastructure templates.
+- Build validation should fail when prompt, model, retrieval, safety, or tool-permission changes are missing required evaluation evidence or schema checks.
+- Generated indexes, embeddings, and caches do not always belong in git, but the source data selection, transformation logic, index configuration, and release record should be traceable.
 
 ## Build Automation
 
@@ -82,6 +86,7 @@ Manage as much of the following as possible, as code:
 - Configuration Files
 - Configuration Management(ie environment variable automation via [terraform](https://github.com/microsoft/cobalt/blob/master/infra/modules/providers/azure/app-service/main.tf#L49))
 - Secret Management(ie creating Azure secrets via [terraform](https://github.com/microsoft/cobalt/blob/master/infra/templates/az-isolated-service-single-region/app.tf#L84))
+- AI application release artifacts, including prompt templates, eval suites, model settings, grounding index definitions, safety policies, and tool permission manifests
 - Cloud Resource Provisioning
 - Role Assignments
 - Load Test Scenarios

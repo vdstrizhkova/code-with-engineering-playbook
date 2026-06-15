@@ -40,12 +40,14 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 
 ## Resources
 
+* [AI-Assisted Engineering](docs/ai-assisted-engineering/README.md)
 * [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)
 * [The first week of an ISE project](docs/the-first-week-of-an-ise-project.md)
 
 ## Engineering Fundamentals
 
 * [Accessibility](docs/non-functional-requirements/accessibility.md)
+* [AI-Assisted Engineering](docs/ai-assisted-engineering/README.md)
 * [Agile Development](docs/agile-development/README.md)
 * [Automated Testing](docs/automated-testing/README.md)
 * [Code Reviews](docs/code-reviews/README.md)

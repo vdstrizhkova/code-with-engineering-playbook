@@ -15,6 +15,18 @@
 - We write our tests early and block any further code merging if tests fail.
 - We run load tests/performance tests where appropriate to validate that the system performs under stress
 
+## Testing AI-assisted and AI-enabled changes
+
+AI can help draft tests, fixtures, and test ideas, but a human reviewer still owns every assertion and expected outcome. Treat generated tests as draft material until they prove meaningful behavior.
+
+- Add regression tests for generated code paths and edge cases the AI may have missed.
+- Review generated tests for realistic setup, negative cases, clear assertions, and useful failure messages.
+- For LLM or agent features, define evaluation datasets, expected behavior rubrics, safety tests, and threshold gates.
+- Include prompt injection, malformed input, sensitive data, refusal, fallback, and human escalation scenarios where relevant.
+- Track evaluation failures as defects with reproducible prompts, context, model or version, and expected behavior.
+
+The [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide covers shared testing and evaluation expectations.
+
 ## Build for Testing
 
 Testing is a critical part of the development process.  It is important to build your application with testing in mind.  Here are some tips to help you build for testing:

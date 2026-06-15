@@ -14,6 +14,10 @@ The purpose of this document is to:
   - [Definition of Ready](agile-development/team-agreements/definition-of-ready.md)
   - [Definition of Done](agile-development/team-agreements/definition-of-done.md)
   - [Estimation](agile-development/ceremonies.md#estimation)
+- [ ] Agree on the [AI-assisted engineering](ai-assisted-engineering/README.md) approach for the project
+  - Confirm which AI tools are approved for this project and data type
+  - Define allowed data, prompt/context boundaries, retention expectations, and approved use cases
+  - Decide how material AI assistance is recorded in PRs, work items, or commit metadata
 - [ ] [Set up the repository/repositories](source-control/README.md#creating-a-new-repository)
   - Decide on repository structure/s
   - Add README.md, LICENSE, CONTRIBUTING.md, .gitignore, etc
@@ -33,6 +37,7 @@ The purpose of this document is to:
   - Discuss the purpose and goals of tests and how to measure test coverage
   - Agree on how to separate unit tests from integration, load and smoke tests
   - Design the first test cases
+  - Define evaluation strategy for AI-enabled stories, including quality, safety, fallback, and regression checks
 - [ ] [Decide on branch naming](source-control/naming-branches.md)
 - [ ] [Discuss security needs and verify that secrets are kept out of source control](./CI-CD/dev-sec-ops/secrets-management/README.md)
 
@@ -40,6 +45,7 @@ The purpose of this document is to:
 
 - [ ] [Set up Source Control](source-control/README.md)
   - Agree on [best practices for commits](source-control/git-guidance/README.md#commit-best-practices)
+  - Confirm branch protection, CI validation, and agent permissions for AI-assisted work
   - [ ] [Set up basic Continuous Integration with linters and automated tests](./CI-CD/continuous-integration.md)
   - [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](agile-development/ceremonies.md#stand-up)
   - Discuss purpose, goals, participants and facilitation guidance
@@ -50,6 +56,7 @@ The purpose of this document is to:
 
 - [ ] [Agree on code style](code-reviews/README.md) and on [how to assign Pull Requests](code-reviews/pull-requests.md)
 - [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/team-agreements/definition-of-done.md)
+- [ ] Agree how reviewers identify, test, and document AI-assisted changes
 - [ ] [Agree on a Code Merging strategy](source-control/merge-strategies.md) and update the CONTRIBUTING.md
 - [ ] [Agree on logging and observability frameworks and strategies](observability/README.md)
 
@@ -60,6 +67,7 @@ The purpose of this document is to:
   - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
 - [ ] [Decide on a versioning strategy](source-control/component-versioning.md)
 - [ ] Agree on how to [Design a feature and conduct a Design Review](design/design-reviews/README.md)
+  - Include AI risks, human approval points, security, observability, and rollback behavior when the design uses AI features or agents
 
 ## Day 5
 

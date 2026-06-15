@@ -18,6 +18,17 @@ Developers working on ISE projects should implement best practices and guidance 
 - [Limited Data Protection Addendum](https://aka.ms/mpsldpa)
 - [Professional Services Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
 
+## AI tool data handling
+
+Treat prompts, context files, embeddings, transcripts, generated outputs, screenshots, and evaluation datasets as project data. Confirm which AI tools are approved for this project and data type before using customer, proprietary, regulated, or security-sensitive context.
+
+- Do not send production data, secrets, regulated data, or unnecessary proprietary context to unapproved AI tools.
+- Use de-identified, redacted, representative, or synthetic examples for prompting and evaluation when possible.
+- Define retention, logging, access, deletion, and export expectations for AI tool inputs and outputs.
+- Apply the same data minimization and customer-controlled environment principles to AI prompts, retrieval indexes, and evaluation data.
+
+Use the [AI-Assisted Engineering](../../ai-assisted-engineering/README.md) guide for shared context hygiene and governance practices.
+
 ## 5 W's of Data Handling
 
 When working on an engagement it is important to address the following 5 **W**'s:
