@@ -9,6 +9,8 @@ An engineer working for a [ISE](ISE.md) project...
 
 This is our playbook. All contributions are welcome! Please feel free to submit a pull request to get involved.
 
+New here? Start with the [Start Here](start-here/README.md) guide for your role.
+
 ## Why Have a Playbook
 
 * To increase overall efficiency for team members and the whole team in general.

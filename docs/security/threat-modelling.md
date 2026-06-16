@@ -20,6 +20,17 @@ More details about these phases can be found at [Threat Modeling Security Fundam
 
 Generative AI, retrieval-augmented generation (RAG), and agentic systems should go through the same threat modeling phases as other systems, with extra attention to untrusted instructions, grounding data, model dependencies, and tool authority. Include AI assets and trust boundaries in the data-flow diagram instead of treating the model as a black box.
 
+Give extra threat-modeling attention to these AI-specific risk categories:
+
+- Prompt injection
+- Insecure output handling
+- Sensitive information disclosure
+- Excessive agency
+- Unsafe tool calls
+- Model or data poisoning
+- Model theft
+- AI supply chain risk
+
 Assets and trust boundaries to diagram include:
 
 - User prompts, uploaded files, system and developer instructions, prompt templates, and prompt stores

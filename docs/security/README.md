@@ -12,7 +12,7 @@ When requesting a security review for your application, please make sure you hav
 
 AI-enabled systems and coding agents need the same secure engineering discipline as other software, plus threat coverage for model behavior, prompts, context, and tool use. Treat model output as untrusted input before rendering, executing, storing, or sending it to another system.
 
-- Extend threat models for prompt injection, insecure output handling, sensitive information disclosure, excessive agency, unsafe tool calls, model or data poisoning, model theft, and AI supply chain risk.
+- Extend threat models using the canonical [AI systems threat-modeling considerations](./threat-modelling.md#ai-systems-threat-modeling-considerations) for prompt injection, tool authority, model and data poisoning, and related AI risks.
 - Scope agent tools, credentials, file access, cloud permissions, and network access to the least privilege needed for the task.
 - Confirm which AI tools are approved for this project and data type before they access customer data, source code, cloud resources, or production systems.
 - Add security tests for malicious prompts, tool-call abuse, data exfiltration, unsafe generated commands, and untrusted retrieved content.

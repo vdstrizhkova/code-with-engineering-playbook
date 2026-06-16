@@ -185,7 +185,7 @@ The schema has 30+ [validators](https://json-schema.org/tools?query=#validator) 
 
 ## Integration Validation
 
-An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
+An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system. For the unit, integration, and end-to-end testing taxonomy and when to apply each, see the [automated testing fundamentals](../automated-testing/README.md#the-fundamentals) and the [end-to-end testing guide](../automated-testing/e2e-testing/README.md); the points below focus on wiring those tests into CI.
 
 ### End-to-End Integration Tests
 
@@ -220,6 +220,8 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 - Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
 ### Branch Policy Enforcement
+
+The canonical branch and pull request workflow lives in [source control](../source-control/README.md#creating-a-new-repository) and the [pull request guidance](../code-reviews/pull-requests.md). The CI-specific enforcement below ensures builds gate reviews and merges:
 
 - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/about-protected-branches) should be setup on the main branch to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
 - Broken builds should block pull request reviews.

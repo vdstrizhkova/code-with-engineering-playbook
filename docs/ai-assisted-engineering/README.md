@@ -60,7 +60,7 @@ Treat model output as untrusted input.
 - Review generated code for injection, authorization, authentication, cryptography, dependency, logging, and error-handling issues.
 - Do not execute generated commands or scripts until a responsible person understands their effect.
 - Scope AI agent tools, credentials, file access, cloud permissions, and network access to the least privilege needed for the task.
-- Add threat-model coverage for prompt injection, insecure output handling, sensitive information disclosure, excessive agency, unsafe tool calls, model or data poisoning, model theft, and AI supply chain risk.
+- Add threat-model coverage for AI-specific risks using the canonical [AI systems threat-modeling considerations](../security/threat-modelling.md#ai-systems-threat-modeling-considerations).
 - Validate generated dependency, container, infrastructure, and CI/CD changes against the normal security review path.
 
 ## Testing and Evaluation

@@ -53,7 +53,7 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 * [Code Reviews](docs/code-reviews/README.md)
 * [Continuous Delivery (CD)](docs/CI-CD/continuous-delivery.md)
 * [Continuous Integration (CI)](docs/CI-CD/continuous-integration.md)
-* [Design](docs/design/readme.md)
+* [Design](docs/design/README.md)
 * [Developer Experience](docs/developer-experience/README.md)
 * [Documentation](docs/documentation/README.md)
 * [Engineering Feedback](docs/engineering-feedback/README.md)

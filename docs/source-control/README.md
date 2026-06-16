@@ -16,10 +16,9 @@ When AI assistants or coding agents help author changes, use the team's normal s
 
 AI assistance does not relax branch protection, pull request review, tests, or work item linkage. Keep AI-assisted changes small enough for a human reviewer to understand and link them to the same evidence expected for other work.
 
-* Record material AI assistance according to team convention.
 * Require AI agent branches and pull requests to link to a work item, tests, and a human reviewer.
 * Do not commit prompts, transcripts, or generated artifacts that contain secrets or customer data.
-* Use [Git guidance](./git-guidance/README.md#ai-assisted-change-traceability) and the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for related authorship and traceability practices.
+* Use [Git guidance](./git-guidance/README.md#ai-assisted-change-traceability) and the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared authorship and traceability practices, including how to record material AI assistance.
 
 ## Creating a New Repository
 

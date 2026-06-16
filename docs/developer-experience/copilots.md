@@ -119,7 +119,7 @@ Use the rest of the playbook as the control plane for AI-assisted delivery:
 
 ## Validating AI-Assisted Work
 
-Treat AI-generated output as a draft until a responsible person reviews and accepts it. Before merging or publishing AI-assisted work, check that:
+The [AI-Assisted Engineering](../ai-assisted-engineering/README.md#human-oversight) guide owns the shared rule: treat AI output as draft material until a responsible person reviews, tests, and accepts it. Before merging or publishing AI-assisted work, confirm that:
 
 - Reviewers can explain the generated code, configuration, documentation, or tests.
 - Relevant unit, integration, end-to-end, or AI evaluation checks have been added or run.
