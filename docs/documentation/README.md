@@ -12,7 +12,7 @@ Documentation shouldn't be an afterthought. Different written documents and mate
 
 ## AI-assisted documentation
 
-AI tools can help draft outlines, explain code, summarize decisions, and produce examples, but generated documentation must be validated before it becomes project guidance.
+AI tools can help us draft outlines, explain code, summarize decisions, and produce examples, but we validate generated documentation before it becomes project guidance.
 
 - Ground AI-assisted drafts in source material such as code, tests, work items, design notes, decisions, and product documentation.
 - Ask subject-matter experts to review generated explanations for accuracy, missing context, and project-specific constraints.
@@ -53,9 +53,9 @@ When working in an engineering project, we typically encounter one or more of th
 - **Afterthought**.
   - Key documents created several weeks into the project: onboarding, how to run the app, etc.
   - Documents created last minute just before the end of a project, forgetting that they also help the team while working on the project.
-- **Unreviewed AI filler**.
-  - Generated sections added to make documentation look complete without a reader need, source-backed claim, or owner.
-  - Rephrased content that changes technical meaning, weakens warnings, removes accessibility details, or loses security and privacy constraints.
+- **Unreviewed generated content**.
+  - Generated sections that fill space without a clear reader need, source-backed claim, or owner.
+  - Rephrased content that drifts from the original technical meaning, softens warnings, or drops accessibility, security, or privacy details.
 
 ## What Documentation Should Exist
 

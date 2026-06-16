@@ -38,7 +38,9 @@ Building observable systems enables development teams at ISE to measure how well
 
 AI-enabled systems need telemetry that helps teams debug behavior, detect drift, and control cost while respecting project privacy and retention rules.
 
-- Capture model, provider, and version, prompt template version, retrieval source IDs, tool calls, latency, token or cost signals, refusal rates, error rates, fallback paths, safety outcomes, and escalation rates.
+- Capture request context: model, provider, and version; prompt template version; retrieval source IDs; and tool calls.
+- Capture operational signals: latency, token or cost signals, error rates, and fallback paths.
+- Capture safety signals: refusal rates, safety outcomes, and escalation rates.
 - Use traces to follow multi-step agent decisions and tool invocations.
 - Apply project data classification and retention rules before logging prompts, completions, documents, embeddings, or user conversations.
 - Run scheduled quality and safety evaluations to detect behavior drift.

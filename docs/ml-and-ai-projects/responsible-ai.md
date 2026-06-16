@@ -40,6 +40,8 @@ Generative AI and agentic systems need additional Responsible AI review because 
 
 ### Grounding and generated content
 
+We ask these questions early, while we are still deciding how the system should source and present its answers:
+
 - What sources ground the answer, and are they authoritative for the intended use?
 - How does the system handle stale, missing, contradictory, or low-quality retrieved content?
 - Are citations or source references available when users need to verify generated answers?
@@ -47,6 +49,8 @@ Generative AI and agentic systems need additional Responsible AI review because 
 - What content safety controls, refusal behaviors, and fallback paths are tested before release?
 
 ### Prompt, retrieval, and tool abuse
+
+Whenever the system accepts untrusted input or calls tools, we walk through these abuse scenarios:
 
 - How could a user, retrieved document, web page, file, or tool response inject instructions that override the intended behavior?
 - Are system instructions, developer prompts, and tool schemas reviewed and versioned as product artifacts?
@@ -57,12 +61,16 @@ Use [threat modeling](../security/threat-modelling.md) to turn these questions i
 
 ### Agent actions and human oversight
 
+Before we let an agent act on a user's behalf, we get clear on what it can do and who signs off:
+
 - What actions can the agent take, and which users, roles, tenants, and environments can authorize them?
 - Which actions require explicit user approval, human review, or a second system check before execution?
 - Can privileged actions be paused, blocked, rate limited, or rolled back during an incident?
 - How are failures, retries, partial completion, and external side effects communicated to users and operators?
 
 ### Memory, logs, and retention
+
+As we decide what to store and for how long, we check these data-handling questions:
 
 - What conversation history, prompts, retrieved content, generated outputs, tool calls, and user feedback are stored?
 - Does stored memory contain personal, confidential, regulated, or customer-owned data?
@@ -72,6 +80,8 @@ Use [threat modeling](../security/threat-modelling.md) to turn these questions i
 Use [privacy fundamentals](../non-functional-requirements/privacy/README.md) and [ML observability](../observability/ml-observability.md) when designing these controls.
 
 ### Production monitoring and review cadence
+
+Once the system is live, we keep asking these questions so the review does not stop at launch:
 
 - What evaluation suite tracks groundedness, harmful content, jailbreak resistance, tool-call accuracy, and regression from previous releases?
 - What user feedback, safety filter outcomes, incident signals, and cost or latency metrics are reviewed after deployment?

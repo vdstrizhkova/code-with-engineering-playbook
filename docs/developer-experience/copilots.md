@@ -66,16 +66,16 @@ For cross-cutting expectations that apply beyond Copilot-specific tooling, see t
 
 ## Team Operating Model for AI-Assisted Delivery
 
-AI assistants and coding agents work best when teams use them inside the same engineering controls as human-authored changes. Agree on the expected workflow before using an agent on production code, customer data, infrastructure, or security-sensitive changes.
+AI assistants and coding agents work best when we use them inside the same engineering controls as human-authored changes. As a team, we agree on the expected workflow before pointing an agent at production code, customer data, infrastructure, or security-sensitive changes.
 
-Use the lightest tool that fits the task:
+We reach for the lightest tool that fits the task, so the workflow stays proportional to the risk of the change:
 
 - Use IDE suggestions for small edits, refactoring help, unit-test scaffolding, explanations, and documentation drafts where the developer stays in the loop.
 - Use chat-based editing when the task spans a few files, needs repository context, or benefits from an explicit prompt and review loop.
 - Use a coding agent when the work can be described as a bounded issue with acceptance criteria, validation commands, and clear out-of-scope areas.
 - Prefer direct human implementation for ambiguous product decisions, high-risk security changes, incident response, code involving sensitive data, or work that requires judgment the team has not captured in instructions.
 
-Give the assistant enough context to make a reviewable change:
+We give the assistant the same context we would give a new teammate, so the change it proposes is reviewable rather than a guess:
 
 - Problem statement and user impact
 - Acceptance criteria and expected behavior
@@ -85,7 +85,7 @@ Give the assistant enough context to make a reviewable change:
 - Out-of-scope work and areas the assistant should not modify
 - Links to work items, design notes, and team conventions when they exist
 
-Define prompt and context hygiene as a team habit:
+We treat prompt and context hygiene as a shared team habit, because anything we paste into a tool can leave the approved environment:
 
 - Keep prompts specific, bounded, and tied to the work item.
 - Include the minimum code and data needed for the task.
@@ -93,7 +93,7 @@ Define prompt and context hygiene as a team habit:
 - Treat custom instructions, prompt files, and reusable prompts as project artifacts that need review when they influence production code, tests, deployment, or security posture.
 - Record important assumptions or prompts in the work item or pull request when they affect how reviewers should inspect the change.
 
-Set tool and execution boundaries before enabling agents or MCP servers:
+Before we enable agents or MCP servers, we set tool and execution boundaries so an assistant only reaches as far as the task needs:
 
 - Use only approved tools, extensions, models, and trusted MCP servers for the repository.
 - Confirm what each MCP server can read, write, execute, and send outside the local environment.
@@ -101,7 +101,7 @@ Set tool and execution boundaries before enabling agents or MCP servers:
 - Limit agent access to the repositories, branches, work items, credentials, and environments needed for the task.
 - Review generated dependency, package, license, and infrastructure changes with the same scrutiny as manually authored changes.
 
-Before a pull request is merged, a human owner remains accountable for the result:
+Before we merge a pull request, one of us stays accountable for the result, however the change was produced:
 
 - Read the changed code and generated text as untrusted contribution, even when the output looks plausible.
 - Verify that tests, documentation, and migration notes match the change.
@@ -109,7 +109,7 @@ Before a pull request is merged, a human owner remains accountable for the resul
 - For generative AI or agentic features, include evaluation evidence for prompts, model configuration, retrieval, safety behavior, and tool-call behavior. Use the [generative AI and agentic systems](../ml-and-ai-projects/generative-ai-and-agentic-systems.md) and [test planning](../automated-testing/test-planning.md#ai-evaluation-planning) guidance.
 - Disclose material AI or agent assistance in the pull request when it affects review context, authorship, risk, or validation expectations.
 
-Use the rest of the playbook as the control plane for AI-assisted delivery:
+We lean on the rest of the playbook as the control plane for AI-assisted delivery, rather than inventing a parallel process:
 
 - Use [code reviews](../code-reviews/process-guidance/reviewer-guidance.md#ai-assisted-and-agent-authored-changes) to inspect generated code, tests, prompts, tool configuration, and dependencies.
 - Use [source control](../source-control/README.md) and [commit guidance](../source-control/git-guidance/README.md#commit-best-practices) to keep AI-assisted changes small, traceable, and attributable.
@@ -119,7 +119,7 @@ Use the rest of the playbook as the control plane for AI-assisted delivery:
 
 ## Validating AI-Assisted Work
 
-The [AI-Assisted Engineering](../ai-assisted-engineering/README.md#human-oversight) guide owns the shared rule: treat AI output as draft material until a responsible person reviews, tests, and accepts it. Before merging or publishing AI-assisted work, confirm that:
+The [AI-Assisted Engineering](../ai-assisted-engineering/README.md#human-oversight) guide owns the shared rule: treat AI output as draft material until a responsible person reviews, tests, and accepts it. Before we merge or publish AI-assisted work, we confirm that:
 
 - Reviewers can explain the generated code, configuration, documentation, or tests.
 - Relevant unit, integration, end-to-end, or AI evaluation checks have been added or run.

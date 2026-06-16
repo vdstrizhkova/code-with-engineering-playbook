@@ -20,12 +20,18 @@ Developers working on ISE projects should implement best practices and guidance 
 
 ## AI tool data handling
 
-Treat prompts, context files, embeddings, transcripts, generated outputs, screenshots, and evaluation datasets as project data. Confirm which AI tools are approved for this project and data type before using customer, proprietary, regulated, or security-sensitive context.
+Anything we feed to or get back from an AI tool is project data, and we handle it with the same care as the rest of the engagement's data. That includes:
 
-- Do not send production data, secrets, regulated data, or unnecessary proprietary context to unapproved AI tools.
-- Use de-identified, redacted, representative, or synthetic examples for prompting and evaluation when possible.
-- Define retention, logging, access, deletion, and export expectations for AI tool inputs and outputs.
-- Apply the same data minimization and customer-controlled environment principles to AI prompts, retrieval indexes, and evaluation data.
+- prompts, context files, and embeddings we send to the tool;
+- transcripts and generated output we get back;
+- screenshots and evaluation datasets we use to test it.
+
+Before we use customer, proprietary, regulated, or security-sensitive context, we confirm which AI tools are approved for this project and data type.
+
+- We keep production data, secrets, regulated data, and unnecessary proprietary context out of unapproved AI tools.
+- We prefer de-identified, redacted, representative, or synthetic examples for prompting and evaluation wherever we can.
+- We agree up front on the retention, logging, access, deletion, and export expectations for AI tool inputs and outputs.
+- We apply the same data-minimization and customer-controlled-environment principles to AI prompts, retrieval indexes, and evaluation data.
 
 Use the [AI-Assisted Engineering](../../ai-assisted-engineering/README.md) guide for shared context hygiene and governance practices.
 

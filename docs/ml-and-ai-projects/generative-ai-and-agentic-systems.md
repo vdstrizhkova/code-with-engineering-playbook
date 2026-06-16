@@ -66,16 +66,16 @@ Agents need stronger controls because they can combine model output, user contex
 
 Generative AI and agentic systems should be reviewed through the same engineering fundamentals as the rest of the system, with extra attention to non-determinism, data boundaries, and tool authority.
 
-- Use [Responsible AI](./responsible-ai.md) to review user impact, harms, transparency, accountability, human oversight, and post-deployment review cadence.
-- Use [model experimentation](./model-experimentation.md) to version prompts, datasets, model settings, retrieval configuration, and evaluation results.
-- Use [test planning](../automated-testing/test-planning.md) to define golden datasets, adversarial cases, prompt regressions, groundedness checks, and tool-call contract tests.
-- Use [threat modeling](../security/threat-modelling.md) to analyze prompt injection, indirect prompt injection, tool-output injection, data exfiltration, sensitive disclosure, model/provider trust, and excessive agency.
-- Use [ML observability](../observability/ml-observability.md) to plan traces for prompts, model versions, retrieval source IDs, citations, safety filters, tool calls, latency, tokens, cost, and user feedback.
-- Use [CI/CD](../CI-CD/README.md) to treat prompts, eval datasets, grounding indexes, model configuration, safety settings, and tool permission manifests as versioned release artifacts.
-- Use [Copilots](../developer-experience/copilots.md) when AI assistants or coding agents help author code, tests, documentation, or pull requests.
-- Use [privacy fundamentals](../non-functional-requirements/privacy/README.md) to review prompt data, logs, memory, telemetry, retention, consent, and deletion handling.
-- Use [accessibility](../non-functional-requirements/accessibility.md) to review generated content, chat experiences, citations, multimodal input and output, fallback paths, and user control.
-- Use [code reviews](../code-reviews/README.md) to inspect AI-generated code, prompt changes, tool contracts, eval evidence, dependencies, and operational controls.
+- Lean on [Responsible AI](./responsible-ai.md) to review user impact, harms, transparency, accountability, human oversight, and post-deployment review cadence.
+- Turn to [model experimentation](./model-experimentation.md) to version prompts, datasets, model settings, retrieval configuration, and evaluation results.
+- Let [test planning](../automated-testing/test-planning.md) define golden datasets, adversarial cases, prompt regressions, groundedness checks, and tool-call contract tests.
+- Run [threat modeling](../security/threat-modelling.md) to analyze prompt injection, indirect prompt injection, tool-output injection, data exfiltration, sensitive disclosure, model/provider trust, and excessive agency.
+- Plan with [ML observability](../observability/ml-observability.md) for traces of prompts, model versions, retrieval source IDs, citations, safety filters, tool calls, latency, tokens, cost, and user feedback.
+- Treat the [CI/CD](../CI-CD/README.md) pipeline as where prompts, eval datasets, grounding indexes, model configuration, safety settings, and tool permission manifests become versioned release artifacts.
+- Reach for [Copilots](../developer-experience/copilots.md) when AI assistants or coding agents help author code, tests, documentation, or pull requests.
+- Check [privacy fundamentals](../non-functional-requirements/privacy/README.md) for prompt data, logs, memory, telemetry, retention, consent, and deletion handling.
+- Revisit [accessibility](../non-functional-requirements/accessibility.md) for generated content, chat experiences, citations, multimodal input and output, fallback paths, and user control.
+- Bring [code reviews](../code-reviews/README.md) in to inspect AI-generated code, prompt changes, tool contracts, eval evidence, dependencies, and operational controls.
 
 ## Definition of Done
 

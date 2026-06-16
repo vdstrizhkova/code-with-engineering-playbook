@@ -12,7 +12,7 @@ Code review is a way to have a conversation about the code where participants wi
 
 ## Reviewing AI-assisted changes
 
-Review AI-generated code as untrusted code: confirm the change satisfies the work item, avoids unrelated generated code, and meets the same expectations as any other pull request.
+We review AI-generated code as untrusted code, confirming the change satisfies the work item, avoids unrelated generated code, and meets the same expectations as any other pull request.
 
 - Inspect logic, edge cases, error handling, security, performance, accessibility, and maintainability.
 - Require meaningful tests or evaluations for generated behavior.

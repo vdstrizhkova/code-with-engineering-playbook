@@ -19,11 +19,11 @@
 
 AI can help draft tests, fixtures, and test ideas, but a human reviewer still owns every assertion and expected outcome. The [AI-Assisted Engineering](../ai-assisted-engineering/README.md#testing-and-evaluation) guide owns the shared "treat output as draft" baseline; the points below cover the testing-specific angle.
 
-- Add regression tests for generated code paths and edge cases the AI may have missed.
-- Review generated tests for realistic setup, negative cases, clear assertions, and useful failure messages.
-- For LLM or agent features, define evaluation datasets, expected behavior rubrics, safety tests, and threshold gates.
-- Include prompt injection, malformed input, sensitive data, refusal, fallback, and human escalation scenarios where relevant.
-- Track evaluation failures as defects with reproducible prompts, context, model or version, and expected behavior.
+- We add regression tests for any AI-generated code paths, covering the edge cases the tool is most likely to miss.
+- We review generated tests for realistic setup, negative cases, clear assertions, and useful failure messages.
+- For LLM or agent features, we define evaluation datasets, expected-behavior rubrics, safety tests, and threshold gates.
+- We include adversarial and malformed inputs such as prompt injection and sensitive-data probes, along with refusal, fallback, and human-escalation scenarios where they apply.
+- We track evaluation failures as defects, capturing reproducible prompts, context, model or version, and expected behavior.
 
 ## Build for Testing
 

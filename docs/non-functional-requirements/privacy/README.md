@@ -7,7 +7,7 @@ In general, developers working on [ISE](../../ISE.md) projects should adhere to 
 
 ## AI Privacy Review Prompts
 
-Generative AI and agentic systems can move private data through prompts, retrieved content, model providers, tool calls, telemetry, memory, and generated summaries. Use these prompts with the [Responsible AI](../../ml-and-ai-projects/responsible-ai.md) and [generative AI and agentic systems](../../ml-and-ai-projects/generative-ai-and-agentic-systems.md) guidance before release and after material model, prompt, retrieval, tool, or telemetry changes.
+Generative AI and agentic systems can move private data through many surfaces — user-facing inputs like prompts and retrieved content, the systems that process them such as model providers and tool calls, and what the system retains afterward in telemetry, memory, and generated summaries. Use these prompts with the [Responsible AI](../../ml-and-ai-projects/responsible-ai.md) and [generative AI and agentic systems](../../ml-and-ai-projects/generative-ai-and-agentic-systems.md) guidance before release and after material model, prompt, retrieval, tool, or telemetry changes.
 
 - What personal, confidential, regulated, or customer-owned data can appear in user prompts, system prompts, uploaded files, retrieved documents, tool responses, generated outputs, logs, traces, embeddings, caches, or memory stores?
 - Are users told what data they should not enter or upload, and does the product block or warn on risky upload types, excessive data scope, or unsupported sensitive data?

@@ -24,7 +24,7 @@ AI tooling feedback should be captured when it creates repeatable friction, safe
 * Privacy, data handling, policy, retention, or customer-data friction that blocks approved use
 * Product limitations, missing integrations, accessibility barriers, evaluation gaps, or operational issues
 
-Include reproducible prompts or scenarios, sanitized context, expected behavior, actual behavior, impact, workaround, tool name, and relevant configuration when submitting AI tooling feedback. Follow the project's [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guidance when deciding what context can be shared.
+When you submit AI tooling feedback, include a reproducible prompt or scenario with sanitized context, describe the expected and actual behavior, and note the impact, any workaround, and the tool name and configuration. Follow the project's [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guidance when deciding what context can be shared.
 
 ## What is Good and High-quality Engineering Feedback
 
