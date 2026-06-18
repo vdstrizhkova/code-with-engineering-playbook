@@ -23,7 +23,7 @@ If you do nothing else follow the [Engineering Fundamentals Checklist](docs/engi
 
 ## Structure of a Sprint
 
-A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to the structure of an Agile sprint.
+A [project kickoff checklist](docs/start-here/project-kickoff-checklist.md) breaks down the playbook according to the structure of an Agile sprint.
 
 ## General Guidance
 
@@ -40,9 +40,10 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 
 ## Resources
 
+* [Start Here](docs/start-here/README.md)
 * [AI-Assisted Engineering](docs/ai-assisted-engineering/README.md)
 * [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)
-* [The first week of an ISE project](docs/the-first-week-of-an-ise-project.md)
+* [Project Kickoff Checklist](docs/start-here/project-kickoff-checklist.md)
 
 ## Engineering Fundamentals
 

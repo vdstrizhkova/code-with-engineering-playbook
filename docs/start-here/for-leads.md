@@ -5,7 +5,7 @@ A curated reading path for project managers and engineering leads. Start with de
 ## Reading path
 
 1. [Agile development](../agile-development/README.md) — ceremonies, backlog management, roles, and team agreements.
-2. [The first week of an ISE project](../the-first-week-of-an-ise-project.md) — a sprint-sequenced project kickoff.
+2. [Project kickoff checklist](project-kickoff-checklist.md) — a sprint-sequenced project kickoff.
 3. [Engineering fundamentals checklist](../engineering-fundamentals-checklist.md) — the shared "do this first" baseline for the team.
 4. [Engineering feedback](../engineering-feedback/README.md) — the feedback loop to Microsoft product teams.
 5. [Documentation](../documentation/README.md) — process and recipes for project documentation.

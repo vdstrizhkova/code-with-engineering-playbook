@@ -2,7 +2,7 @@
 
 This playbook collects the engineering practices ISE teams rely on. Use it as a reference you can read, fix, and share — not a manual to read end to end.
 
-Pick the entry point that matches your role. Each persona page is a curated reading path that links into the existing topic sections; the topics remain the canonical home for every guide.
+Start here, then pick the entry point that matches your role. Each persona page is a curated reading path that links into the existing topic sections; the topics remain the canonical home for every guide.
 
 ## Choose your starting point
 
@@ -13,4 +13,4 @@ Pick the entry point that matches your role. Each persona page is a curated read
 ## Read these first, whatever your role
 
 - [Engineering fundamentals checklist](../engineering-fundamentals-checklist.md) — if you do nothing else, follow the checklist.
-- [The first week of an ISE project](../the-first-week-of-an-ise-project.md) — a sprint-sequenced path for getting a new project moving.
+- [Project kickoff checklist](project-kickoff-checklist.md) — a sprint-sequenced path for getting a new project moving.
