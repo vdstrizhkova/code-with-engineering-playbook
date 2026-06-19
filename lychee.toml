@@ -98,6 +98,15 @@ exclude = [
   "^https://machinelearningmastery.com",
   "^https://www.researchgate.net",
   "^https://github.com/marketplace/?$",
+  # Sites that block automated clients (TLS handshake / bot protection) but are
+  # valid in a browser:
+  "^https://www.postman.com",
+  "^https://blog.insightdatascience.com",
+  "^https://fate.fedai.org",
+  # Site with an expired TLS certificate (valid content, cert not renewed):
+  "^https://www.techdim.com",
+  # Valid but intermittently slow from CI (request timeouts):
+  "^https://www.gnu.org",
   # Other:
   "^https://opensource.org/license/",  # works locally but fails with 403 on Github CI.
 ]
