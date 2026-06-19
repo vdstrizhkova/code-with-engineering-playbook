@@ -61,7 +61,7 @@ require_https = false
 method = "get"
 
 # Custom request headers
-header = ["name=value", "other=value"]
+# header = { name = "value", other = "value" }
 
 # Remap URI matching pattern to different URI.
 remap = []
