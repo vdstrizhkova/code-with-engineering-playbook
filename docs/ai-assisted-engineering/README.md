@@ -110,7 +110,7 @@ AI can help us spot accessibility and inclusion issues, but it does not replace 
 No single policy fits every engagement, so we adapt this guidance to each project's risk, customer policy, and system impact.
 
 - Decide early which tools are approved, which data they can access, who owns review, and how exceptions are handled.
-- Add AI policy and setup questions to project onboarding, first-week planning, team working agreements, and definitions of done where relevant.
+- Add AI policy and setup questions to project onboarding, first-week planning, team working agreements, and definitions of done where relevant — the [Project Kickoff Checklist](../start-here/project-kickoff-checklist.md) is where a team decides its AI usage model.
 - Route higher-risk AI work through the reviews that fit the risk — Responsible AI assessment, privacy review, and security review, plus design, accessibility, and legal or compliance review — before seeking stakeholder approval.
 - Document material limitations, known failure modes, monitoring expectations, and human escalation paths for AI-enabled features.
 - Revisit the guidance when tools, customer constraints, model capabilities, or production usage change.
@@ -125,3 +125,15 @@ No single policy fits every engagement, so we adapt this guidance to each projec
 - [Data Handling](../non-functional-requirements/privacy/data-handling.md) for privacy and data protection practices
 - [Accessibility](../non-functional-requirements/accessibility.md) for inclusive and accessible delivery
 - [Responsible AI](../ml-and-ai-projects/responsible-ai.md) for AI system impact assessment
+
+## External References
+
+These external resources expand on the practices above. Review them against your project's customer, data, and policy constraints before adopting them.
+
+- [microsoft/hve-core](https://github.com/microsoft/hve-core) — open-source Hypervelocity Engineering (HVE) accelerator: reusable Copilot agents, prompts, instructions, and skills built around a Research → Plan → Implement (RPI) workflow.
+- [HVE Core documentation](https://microsoft.github.io/hve-core/) — guidance for AI-assisted development across the lifecycle.
+- [HVE Guide — project lifecycle](https://microsoft.github.io/hve-core/docs/hve-guide/) and [RPI workflow](https://microsoft.github.io/hve-core/docs/rpi/) — explore and specify before coding, with fast iteration loops.
+- [HVE project-planning collection](https://microsoft.github.io/hve-core/docs/getting-started/collections) — reusable requirements and ADR templates.
+- [Responsible AI in Azure Workloads](https://learn.microsoft.com/en-us/azure/well-architected/ai/responsible-ai) — Well-Architected Responsible AI guardrails and governance per lifecycle stage.
+- [Best practices for using GitHub Copilot](https://docs.github.com/en/copilot/get-started/best-practices) — prompt hygiene, iteration, and human oversight.
+- [GitHub Copilot Fundamentals](https://learn.microsoft.com/en-us/training/paths/copilot/) — adoption and SDLC use cases.

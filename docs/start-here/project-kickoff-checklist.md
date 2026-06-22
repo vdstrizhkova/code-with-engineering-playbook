@@ -2,8 +2,16 @@
 
 This checklist sequences playbook guidance for the first week of an ISE project. Use it after choosing the role-based reading path that best fits your work.
 
-## Before Starting the Project
+> **Note:** A good kickoff leaves you with a ready environment, an aligned team, and an immediate start on building — not a long planning-only phase. Lean on the playbook's [AI tooling considerations](../agile-development/README.md#ai-tooling-considerations) and [Continuous Integration](../CI-CD/continuous-integration.md) guidance to iterate quickly from the first day.
 
+## Before Day 1: Readiness
+
+Get these in place so the team can build from Day 1 instead of waiting on setup.
+
+- [ ] Provision [developer tooling](../developer-experience/README.md) and licenses for everyone who needs them
+- [ ] Provide reproducible developer environments (for example, [dev containers](../developer-experience/devcontainers-getting-started.md)) and an [onboarding guide](../developer-experience/onboarding-guide-template.md)
+- [ ] Confirm access to the data, APIs, and connectors the solution depends on
+- [ ] Assign the [team and roles](../agile-development/roles.md) and grant the access each role needs
 - [ ] Discuss and start writing the Team Agreements. Update these documents with any process decisions made throughout the project
   - [Working Agreement](../agile-development/team-agreements/working-agreement.md)
   - [Definition of Ready](../agile-development/team-agreements/definition-of-ready.md)
@@ -20,6 +28,27 @@ This checklist sequences playbook guidance for the first week of an ISE project.
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
   - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
   - [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)
+
+## Kickoff session
+
+Run a focused session to align the team before the first sprint. The day-by-day list below covers the detail; use this agenda for the cross-cutting decisions.
+
+- [ ] Align on the problem and the use case the project solves
+- [ ] Define success criteria for the POC/MVP
+- [ ] Confirm roles and [working agreements](../agile-development/team-agreements/working-agreement.md)
+- [ ] Start from a proven baseline or starter instead of greenfield. As one public example, the [Hypervelocity Engineering (HVE) Core](https://github.com/microsoft/hve-core) project ships reusable [templates](https://microsoft.github.io/hve-core/docs/templates/)
+- [ ] Stand up the repository and a [CI/CD](../agile-development/branching-and-cicd.md) starter with [Continuous Integration](../CI-CD/continuous-integration.md)
+
+## Immediately after kickoff
+
+- [ ] Turn the agreed requirements into a lightweight spec and a [product backlog](../agile-development/backlog-management.md) right away
+- [ ] Start prototyping in short iterations using [minimal slices](../agile-development/advanced-topics/backlog-management/minimal-slices.md), capturing [non-functional requirements](../design/design-patterns/non-functional-requirements-capture-guide.md) as they surface
+
+## Decisions to make at kickoff
+
+- [ ] AI usage model — see [AI-assisted engineering](../ai-assisted-engineering/README.md)
+- [ ] Security and Responsible AI guardrails — see [Security](../security/README.md), [AI systems threat modeling](../security/threat-modelling.md#ai-systems-threat-modeling-considerations), and [Responsible AI](../ml-and-ai-projects/responsible-ai.md)
+- [ ] Feedback-loop cadence — see [ceremonies](../agile-development/ceremonies.md) and [engineering feedback](../engineering-feedback/README.md)
 
 ## Day 1
 

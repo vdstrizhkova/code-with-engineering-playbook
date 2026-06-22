@@ -42,6 +42,8 @@ You can also use configuration files and extensions to customize and extend Copi
 
 - **MCP Servers.** You can use [MCP servers](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) to expand the capabilities of Copilot by providing it access to external tools or services, such as connecting to a project management system (such as Jira or Azure DevOps) or custom APIs (such as the Azure resource manager API).
 
+- **Reusable prompt and agent libraries.** Instead of building these configuration files from scratch, a team can adopt a curated, open-source library of prompts, agents, and instruction files — such as [microsoft/hve-core](https://github.com/microsoft/hve-core), a Hypervelocity Engineering (HVE) accelerator — to standardize AI-assisted workflows across a repository.
+
 ### GitHub Copilot Coding Agent
 
 The [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/agents/copilot-coding-agent) is an AI software development agent that can be assigned to work on issues within the GitHub work management system such as fixing bugs or implementing new features. Once an issue has been assigned to the Copilot Agent, the bot analyzes the work item, creates a branch, starts a virtual environment to execute and test the code iteratively, authors commits, and opens a pull request for review.
