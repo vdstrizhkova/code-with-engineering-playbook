@@ -40,10 +40,12 @@ More details on [continuous integration](./CI-CD/continuous-integration.md) and 
 ## AI-Assisted Engineering
 
 - [ ] Confirm which AI tools are approved for this project and data type.
+- [ ] Shared AI tool configuration and usage standards are documented for the project.
 - [ ] AI-assisted changes go through normal human review, PR policy, tests, and security checks.
 - [ ] Prompts and AI context exclude secrets, credentials, private customer data, and unnecessary sensitive details.
 - [ ] AI-enabled features have quality, safety, security, and regression evaluations.
 - [ ] AI-enabled features have observability for model behavior, tool calls, safety outcomes, cost, latency, and failures.
+- [ ] Team members are ramped up on applying engineering fundamentals with approved AI tools.
 - [ ] Record material AI assistance according to team convention.
 
 More details on [AI-assisted engineering](./ai-assisted-engineering/README.md)
