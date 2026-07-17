@@ -24,7 +24,7 @@ Get these in place so the team can build from Day 1 instead of waiting on setup.
 - [ ] [Set up the repository/repositories](../source-control/README.md#creating-a-new-repository)
   - Decide on repository structure/s
   - Add README.md, LICENSE, CONTRIBUTING.md, .gitignore, etc
-- [ ] [Build a Product Backlog](../agile-development/advanced-topics/backlog-management)
+- [ ] [Build a Product Backlog](../agile-development/backlog-management.md)
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
   - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
   - [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)
@@ -88,7 +88,7 @@ Run a focused session to align the team before the first sprint. The day-by-day 
 
 - [ ] [Set up Continuous Deployment](../CI-CD/continuous-delivery.md)
   - Determine what environments are appropriate for this solution
-  - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
+  - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sign-off for promotion.
 - [ ] [Decide on a versioning strategy](../source-control/component-versioning.md)
 - [ ] Agree on how to [Design a feature and conduct a Design Review](../design/design-reviews/README.md)
   - Include AI risks, human approval points, security, observability, and rollback behavior when the design uses AI features or agents
@@ -99,7 +99,7 @@ Run a focused session to align the team before the first sprint. The day-by-day 
 - [ ] Conduct a [Retrospective](../agile-development/ceremonies.md#retrospectives)
   - Determine required participants, how to capture input (tools) and outcome
   - Set a timeline, and discuss facilitation, meeting structure etc.
-- [ ] [Refine the Backlog](../agile-development/advanced-topics/backlog-management)
+- [ ] [Refine the Backlog](../agile-development/backlog-management.md)
   - Determine required participants
   - Update the [Definition of Ready](../agile-development/team-agreements/definition-of-ready.md)
   - Update estimates, and the [Estimation](../agile-development/ceremonies.md#estimation) document
