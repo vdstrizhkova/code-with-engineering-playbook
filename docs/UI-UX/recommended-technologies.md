@@ -79,23 +79,23 @@ For more details, refer to the [TypeScript Handbook](https://www.typescriptlang.
 
 ## Bootstrapping Web Projects
 
-There are many different ways to bootstrap web applications. Two great tool sets to use are [create-react-app](https://create-react-app.dev/) and [vite](https://vitejs.dev/guide).
+There are many different ways to bootstrap web applications. Two great tool sets to use are [create-react-app](https://create-react-app.dev/) and [vite](https://vite.dev/guide).
 
 ### Vite
 
-[Vite](https://vitejs.dev/) is a modern build tool that provides a fast and optimized development experience for engineers. It leverages native ES modules in the browser to deliver lightning-fast hot module replacement (HMR) and instant server start. [Vite](https://vitejs.dev/) also offers a highly optimized build process using [Rollup](https://rollupjs.org/introduction/), ensuring efficient and performant production builds. By simplifying the setup and configuration, [Vite](https://vitejs.dev/) allows developers to focus more on writing code and less on tooling, making it an excellent choice for modern web development. For more details, visit the [Vite project](https://vitejs.dev/) and [Vite GitHub repository](https://github.com/vitejs/vite).
+[Vite](https://vite.dev/) is a modern build tool that provides a fast and optimized development experience for engineers. It leverages native ES modules in the browser to deliver lightning-fast hot module replacement (HMR) and instant server start. [Vite](https://vite.dev/) also offers a highly optimized build process using [Rollup](https://rollupjs.org/introduction/), ensuring efficient and performant production builds. By simplifying the setup and configuration, [Vite](https://vite.dev/) allows developers to focus more on writing code and less on tooling, making it an excellent choice for modern web development. For more details, visit the [Vite project](https://vite.dev/) and [Vite GitHub repository](https://github.com/vitejs/vite).
 
 #### Documentation & Recommended Resources
 
-- [Vite Documentation](https://vitejs.dev/guide/)
+- [Vite Documentation](https://vite.dev/guide/)
 - [Vite GitHub Repository](https://github.com/vitejs/vite)
-- [Vite Rollup Plugin](https://vitejs.dev/guide/api-plugin.html)
-- [Vite HMR](https://vitejs.dev/guide/features.html#hot-module-replacement)
-- [Vite Configuration](https://vitejs.dev/config/)
-- [Vite Plugins](https://vitejs.dev/plugins/)
-- [Vite Troubleshooting](https://vitejs.dev/guide/troubleshooting.html)
+- [Vite Rollup Plugin](https://vite.dev/guide/api-plugin.html)
+- [Vite HMR](https://vite.dev/guide/features.html#hot-module-replacement)
+- [Vite Configuration](https://vite.dev/config/)
+- [Vite Plugins](https://vite.dev/plugins/)
+- [Vite Troubleshooting](https://vite.dev/guide/troubleshooting.html)
 
-From [Scaffolding your First Vite Project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+From [Scaffolding your First Vite Project](https://vite.dev/guide/#scaffolding-your-first-vite-project)
 
 ##### Installing Vite
 
@@ -118,7 +118,7 @@ React is a framework developed and maintained by Meta (Formerly Facebook). React
 
 ### Quick note on create-react-app
 
-> __create-react-app is deprecated as of January 2023 and should be avoided for new projects.__ It is recommended to use more modern tools like [Vite](#vite) for better performance and flexibility. For more details, refer to the [official React blog](https://react.dev/blog) and [Vite documentation](https://vitejs.dev/guide/why.html).
+> __create-react-app is deprecated as of January 2023 and should be avoided for new projects.__ It is recommended to use more modern tools like [Vite](#vite) for better performance and flexibility. For more details, refer to the [official React blog](https://react.dev/blog) and [Vite documentation](https://vite.dev/guide/why.html).
 
 
 From [Adding TypeScript](https://create-react-app.dev/docs/adding-typescript/)
