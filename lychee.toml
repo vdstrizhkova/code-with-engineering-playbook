@@ -109,10 +109,17 @@ exclude = [
   "^https://www.techdim.com",
   # Valid but intermittently slow from CI (request timeouts):
   "^https://www.gnu.org",
+  # Valid GitHub repos that trigger network errors under GitHub's bot protection:
+  "^https://github.com/tdurieux/anonymous_github",
+  # Academic and commercial sites that are valid but time out under automated checking:
+  "^https://dash.harvard.edu",
+  "^https://www.ranorex.com",
+  "^https://www.goodreads.com",
 ]
 
 # Exclude these filesystem paths from getting checked.
-exclude_path = []
+# .copilot-tracking and .projector are project-local metadata/tooling, not published documentation.
+exclude_path = [".copilot-tracking", ".projector"]
 
 # URLs to check (supports regex). Has preference over all excludes.
 include = []
