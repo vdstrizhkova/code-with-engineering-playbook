@@ -117,6 +117,8 @@ exclude = [
   "^https://www.goodreads.com",
   # vite.dev blocks GitHub Actions runner IPs with network errors:
   "^https://vite.dev",
+  # invisionapp.com returns 500 for CI runner IPs (bot protection):
+  "^https://www.invisionapp.com",
 ]
 
 # Exclude these filesystem paths from getting checked.

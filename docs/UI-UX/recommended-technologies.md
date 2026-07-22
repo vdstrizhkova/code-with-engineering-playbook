@@ -37,7 +37,7 @@ The purpose of this page is to review the commonly selected technology options w
 
 > Keep in mind that like all software, there is no "right way" to build a user interface application. Leverage and trust your team's or your customer's experience and expertise for the best development experience.
 
-Additionally, while some of these technologies are presented as alternate options, many can be combined together. For example, you can use React in a basic HTML/CSS/JS workflow by inline-importing React along with Babel. See the [Add React to a Website](https://reactjs.org/docs/add-react-to-a-website.html) for more details. Similarly, any [Fast](https://www.fast.design/) web component can be [integrated into any existing React application](https://fast.design/docs/3.x/introduction/). And of course, every JavaScript technology can also be used with TypeScript!
+Additionally, while some of these technologies are presented as alternate options, many can be combined together. For example, you can use React in a basic HTML/CSS/JS workflow by inline-importing React along with Babel. See the [Add React to a Website](https://react.dev/learn/add-react-to-an-existing-project) for more details. Similarly, any [Fast](https://www.fast.design/) web component can be [integrated into any existing React application](https://fast.design/docs/3.x/introduction/). And of course, every JavaScript technology can also be used with TypeScript!
 
 ## TypeScript
 
@@ -129,9 +129,9 @@ npx create-react-app my-app --template typescript
 
 ### Documentation & Using older React coding patterns
 
-One can expect to find a multitude of guides, answers, and posts on how to work with React; don't take everything at face value. The best place to review React concepts is the React documentation. From there, you can review articles from various sources such as [React Community Articles](https://reactjs.org/community/articles.html), [Kent C Dodd's Blog](https://kentcdodds.com/blog?q=react), [CSS Tricks Articles](https://css-tricks.com/?s=react), and [Awesome React](https://github.com/enaqx/awesome-react).
+One can expect to find a multitude of guides, answers, and posts on how to work with React; don't take everything at face value. The best place to review React concepts is the React documentation. From there, you can review articles from various sources such as [React Community Articles](https://legacy.reactjs.org/community/articles.html), [Kent C Dodd's Blog](https://kentcdodds.com/blog?q=react), [CSS Tricks Articles](https://css-tricks.com/?s=react), and [Awesome React](https://github.com/enaqx/awesome-react).
 
-The React API has changed dramatically over time. Older resources may contain solutions or patterns that have since been changed and improved upon. Modern React development uses the [React Hooks](https://reactjs.org/docs/hooks-intro.html) pattern. Rarely will you have to implement something using [React Class](https://reactjs.org/docs/react-component.html) pattern. If you're reading an article/answer/docs that instruct you to use the class pattern you may be looking at an out-of-date resource.
+The React API has changed dramatically over time. Older resources may contain solutions or patterns that have since been changed and improved upon. Modern React development uses the [React Hooks](https://legacy.reactjs.org/docs/hooks-intro.html) pattern. Rarely will you have to implement something using [React Class](https://legacy.reactjs.org/docs/react-component.html) pattern. If you're reading an article/answer/docs that instruct you to use the class pattern you may be looking at an out-of-date resource.
 
 
 ## Best Practices to Organize Your React Codebase
@@ -213,7 +213,7 @@ my-react-app/
 
 ### Using React with Entra ID
 
-Integrating [React](https://reactjs.org/) applications with __Entra ID__ (formerly Azure Active Directory) allows you to secure your web applications with enterprise-grade authentication and authorization. This can be achieved using the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/azure/active-directory/develop/msal-overview).
+Integrating [React](https://react.dev/) applications with __Entra ID__ (formerly Azure Active Directory) allows you to secure your web applications with enterprise-grade authentication and authorization. This can be achieved using the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/azure/active-directory/develop/msal-overview).
 
 To get started with Entra ID in your React application, follow these steps:
 

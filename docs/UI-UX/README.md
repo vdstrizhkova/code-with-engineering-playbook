@@ -100,9 +100,9 @@ When choosing a front-end framework or library, consider the project's complexit
 1. HTML/CSS/JavaScript
    - Back to the basics! Start with a single **index.html**, include a popular CSS framework such as [Bootstrap](https://getbootstrap.com/) using their CDN link, and start prototyping!
    - Rarely will you have to support legacy browsers; thus, you can rely on modern JavaScript language features! No need for build tools or even TypeScript (did you know you can [type check JavaScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html)).
-   - For static _vanilla_ websites like this; we still recommend a build system like [Vite](https://vitejs.dev/) to build and manage assets for deployment.
+   - For static _vanilla_ websites like this; we still recommend a build system like [Vite](https://vite.dev/) to build and manage assets for deployment.
 1. React
-   - [React](https://reactjs.org/) allows for the creation of reusable UI components, and is used for most projects in ISE.
+   - [React](https://react.dev/) allows for the creation of reusable UI components, and is used for most projects in ISE.
    - Ideal for projects that require a dynamic and responsive user interface.
    - Works well with a variety of state management libraries like Redux or Context API.
    - Has a massive 3rd party library support.
