@@ -88,7 +88,7 @@ Run a focused session to align the team before the first sprint. The day-by-day 
 
 - [ ] [Set up Continuous Deployment](../CI-CD/continuous-delivery.md)
   - Determine what environments are appropriate for this solution
-  - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
+  - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sign-off for promotion.
 - [ ] [Decide on a versioning strategy](../source-control/component-versioning.md)
 - [ ] Agree on how to [Design a feature and conduct a Design Review](../design/design-reviews/README.md)
   - Include AI risks, human approval points, security, observability, and rollback behavior when the design uses AI features or agents
