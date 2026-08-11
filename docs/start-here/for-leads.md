@@ -15,4 +15,4 @@ A curated reading path for project managers and engineering leads. Start with de
 - [Code reviews](../code-reviews/README.md) — review process and policy.
 - [Security](../security/README.md) — risk ownership and security expectations.
 - [Design](../design/README.md) — design reviews and decision records.
-- [TPM considerations for ML projects](../ml-and-ai-projects/tpm-considerations-for-ml-projects.md) — program management guidance specific to ML work.
+- [TPM considerations](../ml-and-ai-projects/tpm-considerations-for-ml-projects.md) — program management guidance specific to ML work.

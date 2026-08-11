@@ -2,6 +2,8 @@ nav:
   - ISE Engineering Fundamentals Playbook: README.md
   - Start Here: start-here
   - Who is ISE?: ISE.md
+  - The First Week of an ISE Project: the-first-week-of-an-ise-project.md
+  - Engineering Fundamentals Checklist: engineering-fundamentals-checklist.md
   - Source Control: source-control
   - Code Reviews: code-reviews
   - Automated Testing: automated-testing
@@ -17,3 +19,4 @@ nav:
   - Non-Functional Requirements: non-functional-requirements
   - ML & AI Projects: ml-and-ai-projects
   - UI/UX: UI-UX
+  - Resources: resources

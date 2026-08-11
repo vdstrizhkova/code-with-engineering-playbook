@@ -48,7 +48,7 @@ To support the process of capturing a project's _comprehensive_ non-functional r
 
 ### Generative AI and Agentic Systems Requirements
 
-Use measurable requirements for AI features because model quality, retrieval quality, safety behavior, cost, and fallback behavior can change between releases.
+Use measurable requirements for AI features because model quality, retrieval quality, safety behavior, cost, and fallback behavior can change between releases. The specific numbers below (for example, latency targets and budget thresholds) are illustrative example targets a team might agree on, not defaults. Calibrate them to your workload, since realistic values differ widely between, say, a lightweight chat assistant and a multi-tool agent doing retrieval and reasoning.
 
 | Quality Attribute | Description | Common Metrics |
 | -- | -- | -- |

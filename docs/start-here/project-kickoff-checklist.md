@@ -24,7 +24,7 @@ Get these in place so the team can build from Day 1 instead of waiting on setup.
 - [ ] [Set up the repository/repositories](../source-control/README.md#creating-a-new-repository)
   - Decide on repository structure/s
   - Add README.md, LICENSE, CONTRIBUTING.md, .gitignore, etc
-- [ ] [Build a Product Backlog](../agile-development/advanced-topics/backlog-management)
+- [ ] [Build a Product Backlog](../agile-development/backlog-management)
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
   - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
   - [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)
