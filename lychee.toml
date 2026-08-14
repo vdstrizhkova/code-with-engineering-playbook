@@ -106,6 +106,7 @@ exclude = [
   "^https://www.postman.com",
   "^https://blog.insightdatascience.com",
   "^https://fate.fedai.org",
+  "^https://www.goodreads.com/book/show/13663747-essential-scrum$",
   # Site with an expired TLS certificate (valid content, cert not renewed):
   "^https://www.techdim.com",
   # Valid but intermittently slow from CI (request timeouts):

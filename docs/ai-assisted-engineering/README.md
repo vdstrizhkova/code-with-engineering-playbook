@@ -133,7 +133,7 @@ These external resources expand on the practices above. Review them against your
 - [microsoft/hve-core](https://github.com/microsoft/hve-core) — open-source Hypervelocity Engineering (HVE) accelerator: reusable Copilot agents, prompts, instructions, and skills built around a Research → Plan → Implement (RPI) workflow.
 - [HVE Core documentation](https://microsoft.github.io/hve-core/) — guidance for AI-assisted development across the lifecycle.
 - [HVE Guide — project lifecycle](https://microsoft.github.io/hve-core/docs/hve-guide/) and [RPI workflow](https://microsoft.github.io/hve-core/docs/rpi/) — explore and specify before coding, with fast iteration loops.
-- [HVE project-planning collection](https://microsoft.github.io/hve-core/docs/getting-started/collections) — reusable requirements and ADR templates.
+- [HVE project-planning templates](https://microsoft.github.io/hve-core/docs/templates/) — reusable requirements and ADR templates.
 - [Responsible AI in Azure Workloads](https://learn.microsoft.com/en-us/azure/well-architected/ai/responsible-ai) — Well-Architected Responsible AI guardrails and governance per lifecycle stage.
 - [Best practices for using GitHub Copilot](https://docs.github.com/en/copilot/get-started/best-practices) — prompt hygiene, iteration, and human oversight.
 - [GitHub Copilot Fundamentals](https://learn.microsoft.com/en-us/training/paths/copilot/) — adoption and SDLC use cases.
