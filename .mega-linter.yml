@@ -17,10 +17,10 @@ ENABLE_LINTERS:
   # are triaged. The lychee.toml config is kept ready for when it's turned on.
 
 SPELL_CSPELL_DISABLE_ERRORS: true
-# gh-aw compiles workflows to *.lock.yml using runtime features (ubuntu-slim runner
-# label, queued concurrency) that actionlint does not recognize; gh-aw validates the
-# generated output itself, so exclude these generated files from actionlint.
-ACTION_ACTIONLINT_FILTER_REGEX_EXCLUDE: "\\.lock\\.yml$"
+# gh-aw compiles workflows to *.lock.yml. These generated files use runtime features
+# (ubuntu-slim runner, queued concurrency) and long embedded JSON lines that trip
+# actionlint and yamllint. gh-aw validates its own output, so exclude them from all linters.
+FILTER_REGEX_EXCLUDE: "\\.lock\\.yml$"
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
 PARALLEL: true
