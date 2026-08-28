@@ -1,13 +1,11 @@
 ---
 emoji: 🗣️
-description: Advisory tone-of-voice reviewer for documentation PRs, grounded in the repository Writing Style Guidelines.
+description: On-demand advisory tone-of-voice reviewer for documentation PRs, grounded in the repository Writing Style Guidelines.
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - "**/*.md"
-      - "!site/**"
-      - "!megalinter-reports/**"
+  # A reviewer runs the check on demand by commenting "/review-the-tone" on a pull request.
+  slash_command:
+    name: review-the-tone
+    events: [pull_request_comment]
 permissions:
   contents: read
   pull-requests: read
@@ -53,9 +51,9 @@ Do not invent your own style rules. If the guidance does not cover a case, stay 
   image paths, and file names — tone rules apply to sentences, not code or markup.
 - Do **not** re-flag issues that deterministic linters already own (raw markdownlint
   syntax rules, `write-good` grammar). Focus on judgment calls linters cannot make.
-- Before posting, fetch the PR's existing review comments (this workflow re-runs on
-  every push). Do **not** repeat advisory feedback for a line or issue that a previous
-  run already commented on; only comment on newly changed or still-unaddressed prose.
+- Before posting, fetch the PR's existing review comments (a reviewer can invoke this
+  check more than once). Do **not** repeat advisory feedback for a line or issue that a
+  previous run already commented on; only comment on newly changed or still-unaddressed prose.
 
 ## What to Check
 
